@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (3.4.1)
+  - BBSZLib (0.0.2)
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
+  - CryptoSwift (0.5.1)
+  - NSLogger/NoStrip (1.7.0)
+  - ProtocolBuffers-Swift (2.4.3)
+  - Socket.IO-Client-Swift (6.1.4)
+  - SwiftWebSocket (2.6.2)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (= 3.4.1)
+  - BBSZLib
+  - CocoaAsyncSocket
+  - CryptoSwift (= 0.5.1)
+  - NSLogger/NoStrip (= 1.7.0)
+  - ProtocolBuffers-Swift
+  - Socket.IO-Client-Swift (~> 6.1.4)
+  - SwiftWebSocket
+  - SwiftyJSON (= 2.3.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  BBSZLib: ba259b9e5a8250598a8c7ca88829663ce17d803d
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  CryptoSwift: df42dda18baf6c76347a94e227dbcc0a341304bd
+  NSLogger: daa17368272ddf10a0850c218fe49de23b50f2eb
+  ProtocolBuffers-Swift: afbdde78be3c6af8a610d2c257d6bc88e8c7c5d4
+  Socket.IO-Client-Swift: 79dfbbe170d7816c84e2d3cc2baa3d227549e067
+  SwiftWebSocket: 2bb9dda75c87f64eaf9768131141857ca8611aac
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,36 @@
+use_frameworks! # Add this if you are targeting iOS 8+ or using Swift
+workspace 'TNetwork.xcworkspace'
+xcodeproj 'TNetTest/TNetTest.xcodeproj'
+target :TNetTest do
+xcodeproj 'TNetTest/TNetTest.xcodeproj'
+pod 'SwiftyJSON' , '2.3.2'
+pod 'CryptoSwift' , '0.5.1'
+pod 'NSLogger/NoStrip' , '1.7.0'
+pod  'Alamofire' , '3.4.1'
+pod 'SwiftWebSocket'
+end
+
+target :TAmf3Socket do
+xcodeproj 'TNetServer/TNetServer.xcodeproj'
+pod 'BBSZLib'
+pod 'CocoaAsyncSocket' 
+end
+
+
+target :TProbufSocket do
+xcodeproj 'TNetServer/TNetServer.xcodeproj'
+pod 'CocoaAsyncSocket'
+pod 'ProtocolBuffers-Swift'
+end
+
+target :TWebScoket do
+    xcodeproj 'TNetServer/TNetServer.xcodeproj'
+    pod 'SwiftWebSocket'
+end
+target :TSockeIO do
+    xcodeproj 'TNetServer/TNetServer.xcodeproj'
+   pod 'Socket.IO-Client-Swift', '~> 6.1.4'
+end
+
+
+

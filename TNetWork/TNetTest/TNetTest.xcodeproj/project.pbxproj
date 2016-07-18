@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE05F2E21D35FBAE00AD97A8 /* Pods_TNetTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE05F2E11D35FBAE00AD97A8 /* Pods_TNetTest.framework */; };
+		DE05F2EC1D36013800AD97A8 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05F2EB1D36013800AD97A8 /* extension.swift */; };
+		DE629AED1D3397D800A07133 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE629AEC1D3397D800A07133 /* AppDelegate.swift */; };
+		DE629AF21D3397D800A07133 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE629AF01D3397D800A07133 /* Main.storyboard */; };
+		DE629AF41D3397D800A07133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE629AF31D3397D800A07133 /* Assets.xcassets */; };
+		DE629AF71D3397D800A07133 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE629AF51D3397D800A07133 /* LaunchScreen.storyboard */; };
+		DE75BD571D3C81340037454C /* TProbufSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE75BD561D3C81340037454C /* TProbufSocket.framework */; };
+		DE75BD591D3C8BDB0037454C /* SocketIOClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE75BD581D3C8BDB0037454C /* SocketIOClientSwift.framework */; };
+		DE75BD5A1D3CBD100037454C /* TSockeIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE75BD521D3C7F490037454C /* TSockeIO.framework */; };
+		DEA693BF1D36298000C158A3 /* RMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693B71D36298000C158A3 /* RMessages.swift */; };
+		DEA693C01D36298000C158A3 /* SMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693B81D36298000C158A3 /* SMessages.swift */; };
+		DEA693C11D36298000C158A3 /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693B91D36298000C158A3 /* EventCollection.swift */; };
+		DEA693C21D36298000C158A3 /* HttpTavenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693BB1D36298000C158A3 /* HttpTavenService.swift */; };
+		DEA693C31D36298000C158A3 /* TAmf3SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693BD1D36298000C158A3 /* TAmf3SocketManager.swift */; };
+		DEA693CE1D362E3300C158A3 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693C91D362E3300C158A3 /* DataCenter.swift */; };
+		DEA693CF1D362E3300C158A3 /* DictModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693CA1D362E3300C158A3 /* DictModelProtocol.swift */; };
+		DEA693D11D362E3300C158A3 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693CC1D362E3300C158A3 /* GlobalConfig.swift */; };
+		DEA693D21D362E3300C158A3 /* HomeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693CD1D362E3300C158A3 /* HomeViewData.swift */; };
+		DEA695611D3649BC00C158A3 /* UIFirstViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA695601D3649BC00C158A3 /* UIFirstViewControll.swift */; };
+		DED9C0CD1D38953C0043FDAD /* TProbufSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9C0CC1D38953C0043FDAD /* TProbufSocketManager.swift */; };
+		DED9C0CF1D38958B0043FDAD /* Pods_TProbufSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED9C0CE1D38958B0043FDAD /* Pods_TProbufSocket.framework */; };
+		DED9C0D21D389F040043FDAD /* Msg.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9C0D11D389F040043FDAD /* Msg.proto.swift */; };
+		DED9C0D41D38BF900043FDAD /* MsgHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9C0D31D38BF900043FDAD /* MsgHandle.swift */; };
+		DED9C0D61D39F5B90043FDAD /* TAmf3Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED9C0D51D39F5B90043FDAD /* TAmf3Socket.framework */; };
+		DED9C1111D3B926B0043FDAD /* TWebScoket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED9C1101D3B926B0043FDAD /* TWebScoket.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94A8D51EFC63651D99FB42AD /* Pods-TNetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TNetTest.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TNetTest/Pods-TNetTest.release.xcconfig"; sourceTree = "<group>"; };
+		C4992D78E6AB108C84772F9F /* Pods-TNetTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TNetTest.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TNetTest/Pods-TNetTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C7C60A91C5AAC958EC31E9C5 /* Pods_TNetTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TNetTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0578471D369F7F00DF1832 /* BBSZLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BBSZLib.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/BBSZLib.framework"; sourceTree = "<group>"; };
+		DE0578481D369F7F00DF1832 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
+		DE05F2E11D35FBAE00AD97A8 /* Pods_TNetTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TNetTest.framework; path = "/Users/zhangxinhua/Desktop/php/TNetWork/Pods/../build/Debug-iphoneos/Pods_TNetTest.framework"; sourceTree = "<absolute>"; };
+		DE05F2E31D35FBE400AD97A8 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "/Users/zhangxinhua/Desktop/php/TNetWork/Pods/../build/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<absolute>"; };
+		DE05F2EB1D36013800AD97A8 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		DE629AE91D3397D800A07133 /* TNetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE629AEC1D3397D800A07133 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE629AF11D3397D800A07133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE629AF31D3397D800A07133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE629AF61D3397D800A07133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE629AF81D3397D800A07133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6DC9341D35E7D7009DECB8 /* TNetSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNetSocket.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/TNetSocket.framework"; sourceTree = "<group>"; };
+		DE75BD521D3C7F490037454C /* TSockeIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TSockeIO.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/TSockeIO.framework"; sourceTree = "<group>"; };
+		DE75BD541D3C81280037454C /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProtocolBuffers.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/ProtocolBuffers.framework"; sourceTree = "<group>"; };
+		DE75BD561D3C81340037454C /* TProbufSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TProbufSocket.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/TProbufSocket.framework"; sourceTree = "<group>"; };
+		DE75BD581D3C8BDB0037454C /* SocketIOClientSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIOClientSwift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/SocketIOClientSwift.framework"; sourceTree = "<group>"; };
+		DEA1CF981D368897006F290E /* TNetServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNetServer.framework; path = ../TNetServer.framework; sourceTree = "<group>"; };
+		DEA693B71D36298000C158A3 /* RMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMessages.swift; sourceTree = "<group>"; };
+		DEA693B81D36298000C158A3 /* SMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMessages.swift; sourceTree = "<group>"; };
+		DEA693B91D36298000C158A3 /* EventCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCollection.swift; path = net/EventCollection.swift; sourceTree = "<group>"; };
+		DEA693BB1D36298000C158A3 /* HttpTavenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTavenService.swift; sourceTree = "<group>"; };
+		DEA693BD1D36298000C158A3 /* TAmf3SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TAmf3SocketManager.swift; path = ../TAmf3SocketManager.swift; sourceTree = "<group>"; };
+		DEA693C91D362E3300C158A3 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		DEA693CA1D362E3300C158A3 /* DictModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictModelProtocol.swift; sourceTree = "<group>"; };
+		DEA693CC1D362E3300C158A3 /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
+		DEA693CD1D362E3300C158A3 /* HomeViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewData.swift; sourceTree = "<group>"; };
+		DEA695601D3649BC00C158A3 /* UIFirstViewControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFirstViewControll.swift; sourceTree = "<group>"; };
+		DED9C0CC1D38953C0043FDAD /* TProbufSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TProbufSocketManager.swift; path = ../TProbufSocketManager.swift; sourceTree = "<group>"; };
+		DED9C0CE1D38958B0043FDAD /* Pods_TProbufSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TProbufSocket.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/Pods_TProbufSocket.framework"; sourceTree = "<group>"; };
+		DED9C0D11D389F040043FDAD /* Msg.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Msg.proto.swift; sourceTree = "<group>"; };
+		DED9C0D31D38BF900043FDAD /* MsgHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgHandle.swift; sourceTree = "<group>"; };
+		DED9C0D51D39F5B90043FDAD /* TAmf3Socket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAmf3Socket.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphoneos/TAmf3Socket.framework"; sourceTree = "<group>"; };
+		DED9C0D71D39F5E60043FDAD /* BBSZLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = BBSZLib.framework; path = "/Users/zhangxinhua/Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphoneos/BBSZLib.framework"; sourceTree = "<absolute>"; };
+		DED9C0DA1D39F5E60043FDAD /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "/Users/zhangxinhua/Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<absolute>"; };
+		DED9C0DD1D39F5E60043FDAD /* TProbufSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = TProbufSocket.framework; path = "/Users/zhangxinhua/Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphoneos/TProbufSocket.framework"; sourceTree = "<absolute>"; };
+		DED9C0E31D39F6040043FDAD /* ProtocolBuffers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ProtocolBuffers.framework; path = "/Users/zhangxinhua/Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphoneos/ProtocolBuffers.framework"; sourceTree = "<absolute>"; };
+		DED9C10D1D3B89E40043FDAD /* Pods_TWebScoket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TWebScoket.framework; path = "/Users/zhangxinhua/Desktop/php/TNetWork/Pods/../build/Debug-iphoneos/Pods_TWebScoket.framework"; sourceTree = "<absolute>"; };
+		DED9C1101D3B926B0043FDAD /* TWebScoket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TWebScoket.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TNetwork-eqcfghrsftpxivfgvuoauywrcfko/Build/Products/Debug-iphonesimulator/TWebScoket.framework"; sourceTree = "<group>"; };
+		DEE84EAC1D37428600093FC8 /* Pods_Amf3Scoket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Amf3Scoket.framework; path = "/Users/zhangxinhua/Desktop/php/TNetWork/Pods/../build/Debug-iphoneos/Pods_Amf3Scoket.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE629AE61D3397D800A07133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE75BD5A1D3CBD100037454C /* TSockeIO.framework in Frameworks */,
+				DE75BD591D3C8BDB0037454C /* SocketIOClientSwift.framework in Frameworks */,
+				DE75BD571D3C81340037454C /* TProbufSocket.framework in Frameworks */,
+				DED9C1111D3B926B0043FDAD /* TWebScoket.framework in Frameworks */,
+				DED9C0D61D39F5B90043FDAD /* TAmf3Socket.framework in Frameworks */,
+				DED9C0CF1D38958B0043FDAD /* Pods_TProbufSocket.framework in Frameworks */,
+				DE05F2E21D35FBAE00AD97A8 /* Pods_TNetTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63F30DF2DD6EBE33E79D70DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4992D78E6AB108C84772F9F /* Pods-TNetTest.debug.xcconfig */,
+				94A8D51EFC63651D99FB42AD /* Pods-TNetTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2702C8763CD39C24FD68454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE75BD581D3C8BDB0037454C /* SocketIOClientSwift.framework */,
+				DE75BD561D3C81340037454C /* TProbufSocket.framework */,
+				DE75BD541D3C81280037454C /* ProtocolBuffers.framework */,
+				DE75BD521D3C7F490037454C /* TSockeIO.framework */,
+				DED9C1101D3B926B0043FDAD /* TWebScoket.framework */,
+				DED9C10D1D3B89E40043FDAD /* Pods_TWebScoket.framework */,
+				DED9C0D51D39F5B90043FDAD /* TAmf3Socket.framework */,
+				DED9C0CE1D38958B0043FDAD /* Pods_TProbufSocket.framework */,
+				DEE84EAC1D37428600093FC8 /* Pods_Amf3Scoket.framework */,
+				DE0578471D369F7F00DF1832 /* BBSZLib.framework */,
+				DE0578481D369F7F00DF1832 /* CocoaAsyncSocket.framework */,
+				DEA1CF981D368897006F290E /* TNetServer.framework */,
+				DE6DC9341D35E7D7009DECB8 /* TNetSocket.framework */,
+				DE05F2E31D35FBE400AD97A8 /* CocoaAsyncSocket.framework */,
+				DE05F2E11D35FBAE00AD97A8 /* Pods_TNetTest.framework */,
+				C7C60A91C5AAC958EC31E9C5 /* Pods_TNetTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE629AE01D3397D800A07133 = {
+			isa = PBXGroup;
+			children = (
+				DED9C0E31D39F6040043FDAD /* ProtocolBuffers.framework */,
+				DED9C0DD1D39F5E60043FDAD /* TProbufSocket.framework */,
+				DED9C0DA1D39F5E60043FDAD /* CocoaAsyncSocket.framework */,
+				DED9C0D71D39F5E60043FDAD /* BBSZLib.framework */,
+				DE629AEB1D3397D800A07133 /* TNetTest */,
+				63F30DF2DD6EBE33E79D70DA /* Pods */,
+				DE629AEA1D3397D800A07133 /* Products */,
+				D2702C8763CD39C24FD68454 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE629AEA1D3397D800A07133 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE629AE91D3397D800A07133 /* TNetTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE629AEB1D3397D800A07133 /* TNetTest */ = {
+			isa = PBXGroup;
+			children = (
+				DEA693C81D362E3300C158A3 /* model */,
+				DE629AEC1D3397D800A07133 /* AppDelegate.swift */,
+				DEA693B31D36298000C158A3 /* setvice */,
+				DE629AF01D3397D800A07133 /* Main.storyboard */,
+				DE629AF31D3397D800A07133 /* Assets.xcassets */,
+				DE629AF51D3397D800A07133 /* LaunchScreen.storyboard */,
+				DE629AF81D3397D800A07133 /* Info.plist */,
+				DE05F2EB1D36013800AD97A8 /* extension.swift */,
+				DEA695601D3649BC00C158A3 /* UIFirstViewControll.swift */,
+			);
+			path = TNetTest;
+			sourceTree = "<group>";
+		};
+		DEA693B31D36298000C158A3 /* setvice */ = {
+			isa = PBXGroup;
+			children = (
+				DEA693B41D36298000C158A3 /* net */,
+				DEA693B91D36298000C158A3 /* EventCollection.swift */,
+			);
+			path = setvice;
+			sourceTree = "<group>";
+		};
+		DEA693B41D36298000C158A3 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				DED9C0D01D389EC60043FDAD /* prtobufSocket */,
+				DEA693B51D36298000C158A3 /* amfSocket */,
+				DEA693BA1D36298000C158A3 /* http */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		DEA693B51D36298000C158A3 /* amfSocket */ = {
+			isa = PBXGroup;
+			children = (
+				DEA693BD1D36298000C158A3 /* TAmf3SocketManager.swift */,
+				DEA693B71D36298000C158A3 /* RMessages.swift */,
+				DEA693B81D36298000C158A3 /* SMessages.swift */,
+			);
+			path = amfSocket;
+			sourceTree = "<group>";
+		};
+		DEA693BA1D36298000C158A3 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				DEA693BB1D36298000C158A3 /* HttpTavenService.swift */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		DEA693C81D362E3300C158A3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DEA693C91D362E3300C158A3 /* DataCenter.swift */,
+				DEA693CA1D362E3300C158A3 /* DictModelProtocol.swift */,
+				DEA693CC1D362E3300C158A3 /* GlobalConfig.swift */,
+				DEA693CD1D362E3300C158A3 /* HomeViewData.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DED9C0D01D389EC60043FDAD /* prtobufSocket */ = {
+			isa = PBXGroup;
+			children = (
+				DED9C0CC1D38953C0043FDAD /* TProbufSocketManager.swift */,
+				DED9C0D11D389F040043FDAD /* Msg.proto.swift */,
+				DED9C0D31D38BF900043FDAD /* MsgHandle.swift */,
+			);
+			path = prtobufSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE629AE81D3397D800A07133 /* TNetTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE629AFB1D3397D800A07133 /* Build configuration list for PBXNativeTarget "TNetTest" */;
+			buildPhases = (
+				DD9FA22B9D8DC6A5E2B288B4 /* Check Pods Manifest.lock */,
+				DE629AE51D3397D800A07133 /* Sources */,
+				DE629AE61D3397D800A07133 /* Frameworks */,
+				DE629AE71D3397D800A07133 /* Resources */,
+				334F62859C492639E28DD7D6 /* Embed Pods Frameworks */,
+				8191C039B1FB5F1A9D78B3FD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNetTest;
+			productName = TNetTest;
+			productReference = DE629AE91D3397D800A07133 /* TNetTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE629AE11D3397D800A07133 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "张新华";
+				TargetAttributes = {
+					DE629AE81D3397D800A07133 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 23DN84VL44;
+					};
+				};
+			};
+			buildConfigurationList = DE629AE41D3397D800A07133 /* Build configuration list for PBXProject "TNetTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE629AE01D3397D800A07133;
+			productRefGroup = DE629AEA1D3397D800A07133 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE629AE81D3397D800A07133 /* TNetTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE629AE71D3397D800A07133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE629AF71D3397D800A07133 /* LaunchScreen.storyboard in Resources */,
+				DE629AF41D3397D800A07133 /* Assets.xcassets in Resources */,
+				DE629AF21D3397D800A07133 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		334F62859C492639E28DD7D6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TNetTest/Pods-TNetTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8191C039B1FB5F1A9D78B3FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TNetTest/Pods-TNetTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD9FA22B9D8DC6A5E2B288B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE629AE51D3397D800A07133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA693C21D36298000C158A3 /* HttpTavenService.swift in Sources */,
+				DE05F2EC1D36013800AD97A8 /* extension.swift in Sources */,
+				DEA695611D3649BC00C158A3 /* UIFirstViewControll.swift in Sources */,
+				DED9C0CD1D38953C0043FDAD /* TProbufSocketManager.swift in Sources */,
+				DEA693CE1D362E3300C158A3 /* DataCenter.swift in Sources */,
+				DEA693C01D36298000C158A3 /* SMessages.swift in Sources */,
+				DE629AED1D3397D800A07133 /* AppDelegate.swift in Sources */,
+				DEA693BF1D36298000C158A3 /* RMessages.swift in Sources */,
+				DEA693D21D362E3300C158A3 /* HomeViewData.swift in Sources */,
+				DEA693C31D36298000C158A3 /* TAmf3SocketManager.swift in Sources */,
+				DED9C0D41D38BF900043FDAD /* MsgHandle.swift in Sources */,
+				DEA693C11D36298000C158A3 /* EventCollection.swift in Sources */,
+				DED9C0D21D389F040043FDAD /* Msg.proto.swift in Sources */,
+				DEA693CF1D362E3300C158A3 /* DictModelProtocol.swift in Sources */,
+				DEA693D11D362E3300C158A3 /* GlobalConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE629AF01D3397D800A07133 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE629AF11D3397D800A07133 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE629AF51D3397D800A07133 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE629AF61D3397D800A07133 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE629AF91D3397D800A07133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE629AFA1D3397D800A07133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE629AFC1D3397D800A07133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4992D78E6AB108C84772F9F /* Pods-TNetTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TNetTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taven.TNetTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../TNetServer\"/**";
+			};
+			name = Debug;
+		};
+		DE629AFD1D3397D800A07133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A8D51EFC63651D99FB42AD /* Pods-TNetTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TNetTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taven.TNetTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../TNetServer\"/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE629AE41D3397D800A07133 /* Build configuration list for PBXProject "TNetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE629AF91D3397D800A07133 /* Debug */,
+				DE629AFA1D3397D800A07133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE629AFB1D3397D800A07133 /* Build configuration list for PBXNativeTarget "TNetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE629AFC1D3397D800A07133 /* Debug */,
+				DE629AFD1D3397D800A07133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE629AE11D3397D800A07133 /* Project object */;
+}

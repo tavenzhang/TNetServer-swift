@@ -1,0 +1,6 @@
+framework module Pods_TAmf3Socket {
+  umbrella header "Pods-TAmf3Socket-umbrella.h"
+
+  export *
+  module * { export * }
+}
