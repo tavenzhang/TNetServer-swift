@@ -6,18 +6,9 @@
 //  Copyright © 2016年 张新华. All rights reserved.
 //
 
-import Foundation
 import BBSZLib
 
 public class Amf3SocketManager: TSocketGCDServer {
-
-
-	var isStartHeat: Bool = false;
-	// Using NSLock
-	let critLock: NSLock? = nil;
-
-
-	let hertMessage = S_msg_heart_9999(_cmd: 9999);
 
 
 	/**
@@ -63,24 +54,8 @@ public class Amf3SocketManager: TSocketGCDServer {
 	 - date: 16-07-13 14:07:48
 	 */
 	override public func sendMessage(msgData: AnyObject?) -> Void {
-		self.sendAmd3Message(msgData as! S_msg_base);
-	}
-
-
-	/**
-	 心跳包消息
-	 - author: taven
-	 - date: 16-07-13 13:07:32
-	 */
-	 override public func sendHeartMsg() -> Void {
-		// 向服p务器发送固定可是的消息，来检测长连接
-          sendMessage(hertMessage);
-	}
-    
-    
-    
-    
-    func sendAmd3Message(message: S_msg_base) {
+        
+        let message = msgData as! S_msg_base;
         do {
             let amf3 = AMF3Archiver()
             let dic = message.toDictionary()
@@ -93,6 +68,19 @@ public class Amf3SocketManager: TSocketGCDServer {
         catch {
             TLog("message send error!");
         }
-    }
+	}
+
+
+	/**
+	 心跳包消息
+	 - author: taven
+	 - date: 16-07-13 13:07:32
+	 */
+	 override public func sendHeartMsg() -> Void {
+        
+        super.sendHeartMsg();
+        
+	}
+
 
 }

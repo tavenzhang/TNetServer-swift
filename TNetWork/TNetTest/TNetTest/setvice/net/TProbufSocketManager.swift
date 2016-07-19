@@ -17,7 +17,7 @@ class ProbufTSocketManager {
     private  init() {
         socket =  TProbufSocketManage(heartTime: 10, msgHeadSize: 8,isByteBigEndian: false);
         socket!.onMsgResultHandle = onMsgResHandle;
-        socket!.onMsgDicHandle=PrtobufMsgDiconary.getMessageByMsgId;
+        socket!.onMsgDicHandle=PrtobufMsgDiconary.onMessgeDictionart;
         PrtobufMsgDiconary.regInitMessageDiction();
         socket!.onTLogHandle=socketlog;
     }
@@ -35,7 +35,7 @@ class ProbufTSocketManager {
      
         socket!.onConnectSocket(host, port: mport, timeOut: timeOut){
             [weak self] in
-              // 成功连接后开始发送第一个消息 10000消息
+              // 成功连接后开始发送第一个消息 消息
             let msg =  Person.Builder();
             msg.id = 222;
             msg.name = "taven";
@@ -62,7 +62,7 @@ class ProbufTSocketManager {
         switch(meeasg.msgId){
         case 5:
             let msgPerson = meeasg.dataMessage as! Person.Builder;
-            LogSocket("receive--->msgId=%d, body==%@", args: msgPerson.id,msgPerson.name);
+           // LogSocket("receive--->msgId=%d, body==%@", args: msgPerson.id,msgPerson.name);
             break;
         default:
             break;

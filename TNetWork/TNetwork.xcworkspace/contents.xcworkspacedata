@@ -5,7 +5,7 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/zhangxinhua/Desktop/php/TNetWork/TNetServer/TNetServer-swift.xcodeproj">
+      location = "group:TNetServer/TNetServer-swift.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TNetTest/TNetTest.xcodeproj">

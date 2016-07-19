@@ -27,7 +27,7 @@ public typealias connectSucessHandle = () -> Void
 
 public typealias SockeLogBlock = (log: String) -> Void
 
-public typealias messageDictionaryBlock = (msgId:Int) -> AnyObject
+public typealias messageDictionaryBlock = (msgKey:AnyObject) -> AnyObject
 
 public typealias messageResultHandleBlock = (mesage: AnyObject) -> Void
 

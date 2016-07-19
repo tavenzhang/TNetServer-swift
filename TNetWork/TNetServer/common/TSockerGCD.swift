@@ -23,9 +23,15 @@ class TGCDSocker: GCDAsyncSocket {
 public class TSocketGCDServer: NSObject,netSocketProtol {
 
 	public var buffMutableData: NSMutableData?=nil;
+    
 	public var heartNSTimer: NSTimer? = nil;
+    /// 是否使用大端模式
+    public var _isByteBigEndian:Bool = true;
+    //心跳包
+    public var  heartMessage:AnyObject? = nil;
 	// 心跳间隔
 	var heartTimeDim: Double = 0;
+    
 	var socket: TGCDSocker? = nil;
 	var _host: String = "";
 	var _port: Int = 0;
@@ -33,8 +39,7 @@ public class TSocketGCDServer: NSObject,netSocketProtol {
 	// 消息头长度 默认2个字节byte
 	var msgHeadSize = 2;
 	var curMsgBodyLength = 0;
-    /// 是否使用大端模式
-    var _isByteBigEndian:Bool = true;
+
     
     //
     public var onConnectSucHandle:connectSucessHandle?;
@@ -211,7 +216,10 @@ public class TSocketGCDServer: NSObject,netSocketProtol {
      - date: 16-07-14 08:07:3
      */
 	public func sendHeartMsg() -> Void {
-
+        if(heartMessage != nil)
+        {
+            sendMessage(heartMessage!);
+        }
 	}
     /**
      发送正常消息

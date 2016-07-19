@@ -6,7 +6,6 @@
 //  Copyright © 2016年 张新华. All rights reserved.
 //
 
-import Foundation
 import SwiftWebSocket
 
 public class TWebSocket:netWebSocketProtol{

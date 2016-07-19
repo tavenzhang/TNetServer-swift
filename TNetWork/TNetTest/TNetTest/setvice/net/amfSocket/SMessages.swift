@@ -18,6 +18,10 @@ class s_msg_noBody:S_msg_base {
 
 class s_msg_heart_9999: s_msg_noBody {
     var msg:UInt32 = arc4random();
+
+    convenience init() {
+        self.init(_cmd: 9999);
+    }
 }
 
 

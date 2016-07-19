@@ -25,10 +25,14 @@ class PrtobufMsgDiconary {
     }
     
     class func regMessageByMsgId(msgId:Int,cls:AnyClass){
+
         msgDico[msgId]=cls;
         return
     }
 
+    class func onMessgeDictionart(msgKey:AnyObject)-> AnyObject{
+        return getMessageByMsgId(msgKey as! Int );
+    }
     class func unRegMessageByMsgId(msgId:Int){
         if(msgDico[msgId] != nil){
             msgDico.removeValueForKey(msgId);

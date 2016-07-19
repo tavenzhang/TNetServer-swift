@@ -12,6 +12,12 @@ import SwiftyJSON
 import TAmf3Socket
 import NSLogger
 
+class MyAm33Soket: Amf3SocketManager {
+    
+    
+}
+
+
 class TAmf3SocketManager {
 
     internal static let sharedInstance = TAmf3SocketManager();
@@ -38,6 +44,7 @@ class TAmf3SocketManager {
         socket!.onConnectSocket(host, port: mport, timeOut: timeOut){
             [weak self] in
             self!.sendMessage(S_msg_base(_cmd: 10000));
+            self!.socket!.heartMessage = s_msg_heart_9999();
         }
     }
     

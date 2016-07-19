@@ -1,0 +1,70 @@
+syntax = "proto2";
+
+
+message CMsg
+
+{
+
+    required string msghead = 1;
+
+    required string msgbody = 2;
+
+}
+
+
+
+message CMsgHead
+
+{
+
+    required int32 msglen = 1;
+
+    required int32 msgtype = 2;
+
+    required int32 msgseq = 3;
+
+    required int32 termversion = 4;
+
+    required int32 msgres = 5;
+
+    required string termid = 6;
+
+}
+message CMsgReg
+
+{
+
+    optional int32 area = 1;
+
+    optional int32 region = 2;
+
+    optional int32 shop = 3;
+
+    optional int32 ret = 4;
+
+    optional string termid = 5[default="12345"];
+
+}
+
+
+
+message CMsgLogin
+
+{
+
+    optional int32 ret = 1;
+
+}
+
+message Person {
+    required string name = 1;
+    required int32 id = 2;
+}
+
+
+message CMsgLogout
+
+{
+
+    optional int32 ret = 1;
+}

@@ -6,19 +6,12 @@
 //  Copyright © 2016年 张新华. All rights reserved.
 //
 
-import Foundation
 import ProtocolBuffers
 
 public class TProbufSocketManage: TSocketGCDServer {
 
-	// Using NSLock
-	let critLock: NSLock? = nil;
-
 	var lastMsg: MsgProbufBase? = nil;
-    
-    var heartMessage: MsgProbufBase? = nil;
 
-	
 	/**
 	 读取消息头  子类必须ovrride
 	 - author: taven
@@ -37,7 +30,11 @@ public class TProbufSocketManage: TSocketGCDServer {
 	 - date: 16-07-14 08:07:46
 	 */
 	override public func readMsgBody(data: NSMutableData) -> Bool {
-		lastMsg?.dataMessage = self.onMsgDicHandle!(msgId:lastMsg!.msgId) as? GeneratedMessageBuilder;
+        if(self.onMsgDicHandle != nil)
+        {
+          lastMsg?.dataMessage = self.onMsgDicHandle!(msgKey:lastMsg!.msgId) as? GeneratedMessageBuilder;
+        }
+
         do{
             try   lastMsg?.dataMessage?.mergeFromData(data);
         }
@@ -59,11 +56,9 @@ public class TProbufSocketManage: TSocketGCDServer {
 	 - author: taven
 	 */
 	override public func sendHeartMsg() -> Void {
-        if(heartMessage != nil)
-        {
-            sendMessage(heartMessage!);
-        }
+        super.sendHeartMsg();
 	}
+    
 	/**
 	 发送正常消息
 	 - author: taven

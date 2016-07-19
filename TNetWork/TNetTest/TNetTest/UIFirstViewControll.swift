@@ -15,7 +15,7 @@ import TSockeIO
 
 class UIFirstViewControll: UIViewController {
      var isNDataBigEnida:Bool { return NSHostByteOrder() == NS_BigEndian}
-    var lostHost:String="192.168.31.216";
+    var lostHost:String="192.168.1.102";
     override func viewDidLoad() {
         super.viewDidLoad()
 
