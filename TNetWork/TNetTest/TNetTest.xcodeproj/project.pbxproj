@@ -109,6 +109,10 @@
 		D2702C8763CD39C24FD68454 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DED9C0E31D39F6040043FDAD /* ProtocolBuffers.framework */,
+				DED9C0DD1D39F5E60043FDAD /* TProbufSocket.framework */,
+				DED9C0DA1D39F5E60043FDAD /* CocoaAsyncSocket.framework */,
+				DED9C0D71D39F5E60043FDAD /* BBSZLib.framework */,
 				DE75BD581D3C8BDB0037454C /* SocketIOClientSwift.framework */,
 				DE75BD561D3C81340037454C /* TProbufSocket.framework */,
 				DE75BD541D3C81280037454C /* ProtocolBuffers.framework */,
@@ -132,10 +136,6 @@
 		DE629AE01D3397D800A07133 = {
 			isa = PBXGroup;
 			children = (
-				DED9C0E31D39F6040043FDAD /* ProtocolBuffers.framework */,
-				DED9C0DD1D39F5E60043FDAD /* TProbufSocket.framework */,
-				DED9C0DA1D39F5E60043FDAD /* CocoaAsyncSocket.framework */,
-				DED9C0D71D39F5E60043FDAD /* BBSZLib.framework */,
 				DE629AEB1D3397D800A07133 /* TNetTest */,
 				63F30DF2DD6EBE33E79D70DA /* Pods */,
 				DE629AEA1D3397D800A07133 /* Products */,
