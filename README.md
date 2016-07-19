@@ -1,3 +1,5 @@
+ TNetServer-swift
+ 　
  本项目对CocoaAsyncSocket, ProtocolBuffers-Swift 进行了简单的的封装和处理，使得ios socket通信更方便使用  
    通过继承覆写 TSockerGCD中的
     func readMsgHead(data: NSMutableData) -> Int;
