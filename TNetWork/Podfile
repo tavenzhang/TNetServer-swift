@@ -11,24 +11,24 @@ pod 'SwiftWebSocket'
 end
 
 target :TAmf3Socket do
-xcodeproj 'TNetServer/TNetServer.xcodeproj'
+xcodeproj 'TNetServer/TNetServer-swift.xcodeproj'
 pod 'BBSZLib'
 pod 'CocoaAsyncSocket' 
 end
 
 
 target :TProbufSocket do
-xcodeproj 'TNetServer/TNetServer.xcodeproj'
+xcodeproj 'TNetServer/TNetServer-swift.xcodeproj'
 pod 'CocoaAsyncSocket'
 pod 'ProtocolBuffers-Swift'
 end
 
 target :TWebScoket do
-    xcodeproj 'TNetServer/TNetServer.xcodeproj'
+    xcodeproj 'TNetServer/TNetServer-swift.xcodeproj'
     pod 'SwiftWebSocket'
 end
 target :TSockeIO do
-    xcodeproj 'TNetServer/TNetServer.xcodeproj'
+    xcodeproj 'TNetServer/TNetServer-swift.xcodeproj'
    pod 'Socket.IO-Client-Swift', '~> 6.1.4'
 end
 

@@ -19,7 +19,6 @@
 		DEA693BF1D36298000C158A3 /* RMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693B71D36298000C158A3 /* RMessages.swift */; };
 		DEA693C01D36298000C158A3 /* SMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693B81D36298000C158A3 /* SMessages.swift */; };
 		DEA693C11D36298000C158A3 /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693B91D36298000C158A3 /* EventCollection.swift */; };
-		DEA693C21D36298000C158A3 /* HttpTavenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693BB1D36298000C158A3 /* HttpTavenService.swift */; };
 		DEA693C31D36298000C158A3 /* TAmf3SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693BD1D36298000C158A3 /* TAmf3SocketManager.swift */; };
 		DEA693CE1D362E3300C158A3 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693C91D362E3300C158A3 /* DataCenter.swift */; };
 		DEA693CF1D362E3300C158A3 /* DictModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA693CA1D362E3300C158A3 /* DictModelProtocol.swift */; };
@@ -58,7 +57,6 @@
 		DEA693B71D36298000C158A3 /* RMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMessages.swift; sourceTree = "<group>"; };
 		DEA693B81D36298000C158A3 /* SMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMessages.swift; sourceTree = "<group>"; };
 		DEA693B91D36298000C158A3 /* EventCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCollection.swift; path = net/EventCollection.swift; sourceTree = "<group>"; };
-		DEA693BB1D36298000C158A3 /* HttpTavenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTavenService.swift; sourceTree = "<group>"; };
 		DEA693BD1D36298000C158A3 /* TAmf3SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TAmf3SocketManager.swift; path = ../TAmf3SocketManager.swift; sourceTree = "<group>"; };
 		DEA693C91D362E3300C158A3 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		DEA693CA1D362E3300C158A3 /* DictModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictModelProtocol.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 			children = (
 				DED9C0D01D389EC60043FDAD /* prtobufSocket */,
 				DEA693B51D36298000C158A3 /* amfSocket */,
-				DEA693BA1D36298000C158A3 /* http */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -194,14 +191,6 @@
 				DEA693B81D36298000C158A3 /* SMessages.swift */,
 			);
 			path = amfSocket;
-			sourceTree = "<group>";
-		};
-		DEA693BA1D36298000C158A3 /* http */ = {
-			isa = PBXGroup;
-			children = (
-				DEA693BB1D36298000C158A3 /* HttpTavenService.swift */,
-			);
-			path = http;
 			sourceTree = "<group>";
 		};
 		DEA693C81D362E3300C158A3 /* model */ = {
@@ -348,7 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA693C21D36298000C158A3 /* HttpTavenService.swift in Sources */,
 				DE05F2EC1D36013800AD97A8 /* extension.swift in Sources */,
 				DEA695611D3649BC00C158A3 /* UIFirstViewControll.swift in Sources */,
 				DED9C0CD1D38953C0043FDAD /* TProbufSocketManager.swift in Sources */,
